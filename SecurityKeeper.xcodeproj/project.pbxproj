@@ -7,21 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6400087EC672302E248A822 /* Pods_SecurityKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3531F441F1C304D530DE52A4 /* Pods_SecurityKeeper.framework */; };
 		BA64E5021FC8FCA100F9A0F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E5011FC8FCA100F9A0F0 /* AppDelegate.swift */; };
 		BA64E5041FC8FCA100F9A0F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E5031FC8FCA100F9A0F0 /* ViewController.swift */; };
 		BA64E5071FC8FCA100F9A0F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA64E5051FC8FCA100F9A0F0 /* Main.storyboard */; };
-		BA64E5091FC8FCA100F9A0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA64E5081FC8FCA100F9A0F0 /* Assets.xcassets */; };
 		BA64E50C1FC8FCA100F9A0F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA64E50A1FC8FCA100F9A0F0 /* LaunchScreen.storyboard */; };
+		BA64E5151FC9012200F9A0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA64E5141FC9012200F9A0F0 /* Assets.xcassets */; };
+		BA64E51A1FC9056000F9A0F0 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E5191FC9056000F9A0F0 /* UIHelper.swift */; };
+		BA64E51E1FC9071300F9A0F0 /* ProtectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA64E51D1FC9071300F9A0F0 /* ProtectionView.xib */; };
+		BA64E5201FC90BA700F9A0F0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BA64E51F1FC90BA700F9A0F0 /* Podfile */; };
+		BA64E5221FC90EC400F9A0F0 /* EncryptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E5211FC90EC400F9A0F0 /* EncryptionManager.swift */; };
+		BA64E5271FC9196E00F9A0F0 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E5261FC9196E00F9A0F0 /* DataModel.swift */; };
+		BA64E52B1FC919F600F9A0F0 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E52A1FC919F600F9A0F0 /* Folder.swift */; };
+		BA64E52D1FC91C2B00F9A0F0 /* PersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E52C1FC91C2B00F9A0F0 /* PersistentManager.swift */; };
+		BA64E52F1FC91C6C00F9A0F0 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E52E1FC91C6C00F9A0F0 /* Credential.swift */; };
+		BAA544EC1FC9242D007351FA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA544EB1FC9242D007351FA /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3531F441F1C304D530DE52A4 /* Pods_SecurityKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecurityKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62A851E6FAEF3BD82F9B03F6 /* Pods-SecurityKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-SecurityKeeper/Pods-SecurityKeeper.release.xcconfig"; sourceTree = "<group>"; };
 		BA64E4FE1FC8FCA100F9A0F0 /* SecurityKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA64E5011FC8FCA100F9A0F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA64E5031FC8FCA100F9A0F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA64E5061FC8FCA100F9A0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BA64E5081FC8FCA100F9A0F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA64E50B1FC8FCA100F9A0F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA64E50D1FC8FCA100F9A0F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA64E5141FC9012200F9A0F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA64E5191FC9056000F9A0F0 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		BA64E51D1FC9071300F9A0F0 /* ProtectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtectionView.xib; sourceTree = "<group>"; };
+		BA64E51F1FC90BA700F9A0F0 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA64E5211FC90EC400F9A0F0 /* EncryptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionManager.swift; sourceTree = "<group>"; };
+		BA64E5231FC9174500F9A0F0 /* SecurityKeeper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SecurityKeeper.entitlements; sourceTree = "<group>"; };
+		BA64E5261FC9196E00F9A0F0 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		BA64E52A1FC919F600F9A0F0 /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		BA64E52C1FC91C2B00F9A0F0 /* PersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentManager.swift; sourceTree = "<group>"; };
+		BA64E52E1FC91C6C00F9A0F0 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		BAA544EB1FC9242D007351FA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DB002AF180FC5A055FEDAD29 /* Pods-SecurityKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecurityKeeper/Pods-SecurityKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +52,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6400087EC672302E248A822 /* Pods_SecurityKeeper.framework in Frameworks */,
+				BAA544EC1FC9242D007351FA /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D07319E1AB4F971CC534F8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB002AF180FC5A055FEDAD29 /* Pods-SecurityKeeper.debug.xcconfig */,
+				62A851E6FAEF3BD82F9B03F6 /* Pods-SecurityKeeper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		97130061702C019E45BB5870 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAA544EB1FC9242D007351FA /* CloudKit.framework */,
+				3531F441F1C304D530DE52A4 /* Pods_SecurityKeeper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA64E4F51FC8FCA100F9A0F0 = {
 			isa = PBXGroup;
 			children = (
+				BA64E51F1FC90BA700F9A0F0 /* Podfile */,
 				BA64E5001FC8FCA100F9A0F0 /* SecurityKeeper */,
 				BA64E4FF1FC8FCA100F9A0F0 /* Products */,
+				3D07319E1AB4F971CC534F8A /* Pods */,
+				97130061702C019E45BB5870 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +100,54 @@
 		BA64E5001FC8FCA100F9A0F0 /* SecurityKeeper */ = {
 			isa = PBXGroup;
 			children = (
-				BA64E5011FC8FCA100F9A0F0 /* AppDelegate.swift */,
-				BA64E5031FC8FCA100F9A0F0 /* ViewController.swift */,
+				BA64E5231FC9174500F9A0F0 /* SecurityKeeper.entitlements */,
+				BA64E5181FC9054D00F9A0F0 /* Model */,
+				BA64E5171FC903B700F9A0F0 /* View */,
+				BA64E5161FC903B100F9A0F0 /* Controller */,
 				BA64E5051FC8FCA100F9A0F0 /* Main.storyboard */,
-				BA64E5081FC8FCA100F9A0F0 /* Assets.xcassets */,
+				BA64E5131FC8FCB100F9A0F0 /* SupportingFile */,
+			);
+			path = SecurityKeeper;
+			sourceTree = "<group>";
+		};
+		BA64E5131FC8FCB100F9A0F0 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E5141FC9012200F9A0F0 /* Assets.xcassets */,
 				BA64E50A1FC8FCA100F9A0F0 /* LaunchScreen.storyboard */,
 				BA64E50D1FC8FCA100F9A0F0 /* Info.plist */,
 			);
-			path = SecurityKeeper;
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		BA64E5161FC903B100F9A0F0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E5011FC8FCA100F9A0F0 /* AppDelegate.swift */,
+				BA64E5031FC8FCA100F9A0F0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BA64E5171FC903B700F9A0F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E51D1FC9071300F9A0F0 /* ProtectionView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA64E5181FC9054D00F9A0F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA64E5191FC9056000F9A0F0 /* UIHelper.swift */,
+				BA64E5211FC90EC400F9A0F0 /* EncryptionManager.swift */,
+				BA64E5261FC9196E00F9A0F0 /* DataModel.swift */,
+				BA64E52A1FC919F600F9A0F0 /* Folder.swift */,
+				BA64E52C1FC91C2B00F9A0F0 /* PersistentManager.swift */,
+				BA64E52E1FC91C6C00F9A0F0 /* Credential.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA64E5101FC8FCA100F9A0F0 /* Build configuration list for PBXNativeTarget "SecurityKeeper" */;
 			buildPhases = (
+				CF5E764E454C62EF5D82FFDE /* [CP] Check Pods Manifest.lock */,
 				BA64E4FA1FC8FCA100F9A0F0 /* Sources */,
 				BA64E4FB1FC8FCA100F9A0F0 /* Frameworks */,
 				BA64E4FC1FC8FCA100F9A0F0 /* Resources */,
+				88918E2DDDC314B604DB15C0 /* [CP] Embed Pods Frameworks */,
+				1F90927AF8CB979DC78D47B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +186,17 @@
 					BA64E4FD1FC8FCA100F9A0F0 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,21 +223,87 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA64E5201FC90BA700F9A0F0 /* Podfile in Resources */,
 				BA64E50C1FC8FCA100F9A0F0 /* LaunchScreen.storyboard in Resources */,
-				BA64E5091FC8FCA100F9A0F0 /* Assets.xcassets in Resources */,
+				BA64E51E1FC9071300F9A0F0 /* ProtectionView.xib in Resources */,
+				BA64E5151FC9012200F9A0F0 /* Assets.xcassets in Resources */,
 				BA64E5071FC8FCA100F9A0F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F90927AF8CB979DC78D47B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecurityKeeper/Pods-SecurityKeeper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88918E2DDDC314B604DB15C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SecurityKeeper/Pods-SecurityKeeper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SecurityKeeper/Pods-SecurityKeeper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF5E764E454C62EF5D82FFDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecurityKeeper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA64E4FA1FC8FCA100F9A0F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA64E5221FC90EC400F9A0F0 /* EncryptionManager.swift in Sources */,
 				BA64E5041FC8FCA100F9A0F0 /* ViewController.swift in Sources */,
 				BA64E5021FC8FCA100F9A0F0 /* AppDelegate.swift in Sources */,
+				BA64E51A1FC9056000F9A0F0 /* UIHelper.swift in Sources */,
+				BA64E52D1FC91C2B00F9A0F0 /* PersistentManager.swift in Sources */,
+				BA64E5271FC9196E00F9A0F0 /* DataModel.swift in Sources */,
+				BA64E52F1FC91C6C00F9A0F0 /* Credential.swift in Sources */,
+				BA64E52B1FC919F600F9A0F0 /* Folder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,31 +438,37 @@
 		};
 		BA64E5111FC8FCA100F9A0F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB002AF180FC5A055FEDAD29 /* Pods-SecurityKeeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SecurityKeeper/SecurityKeeper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MEW5QBNL4;
-				INFOPLIST_FILE = SecurityKeeper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SecurityKeeper/SupportingFile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jay.SecurityKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BA64E5121FC8FCA100F9A0F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A851E6FAEF3BD82F9B03F6 /* Pods-SecurityKeeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SecurityKeeper/SecurityKeeper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8MEW5QBNL4;
-				INFOPLIST_FILE = SecurityKeeper/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SecurityKeeper/SupportingFile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jay.SecurityKeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
