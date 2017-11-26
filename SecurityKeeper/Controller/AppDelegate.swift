@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        PersistentManager.shared.load()
+        let cre = PersistentManager.shared
+        cre.selfCheck()
+        print(cre.load(entity: "Asset").count)
         return true
     }
 

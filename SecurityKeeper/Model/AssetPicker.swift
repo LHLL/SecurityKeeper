@@ -30,19 +30,14 @@ class AssetPicker {
     private func convertAssetToDataModel(_ asset:TLPHAsset){
         if asset.type == .photo || asset.type == .livePhoto{
             let data = UIImagePNGRepresentation(asset.fullResolutionImage!)
-            let model = DataModel()
-            model.data = data
-            model.title = asset.originalFileName!
-            PersistentManager.shared.save(asset: model)
+            //let model = DataModel()
+            //model.data = data
+            //model.path = asset.phAsset.
+            //model.title = asset.originalFileName!
+           // PersistentManager.shared.save(asset: model)
         }else{
-            print(asset.videoSize(completion: { (size) in
-                print(size)
-            }))
             asset.fetchVideoData(completion: { (data) in
-                let model = DataModel()
-                model.data = data
-                model.title = asset.originalFileName!
-                PersistentManager.shared.save(asset: model)
+                PersistentManager.shared.save(fileName: asset.originalFileName!, data: data!)
             })
         }
     }

@@ -17,13 +17,11 @@
 		BA64E51E1FC9071300F9A0F0 /* ProtectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA64E51D1FC9071300F9A0F0 /* ProtectionView.xib */; };
 		BA64E5201FC90BA700F9A0F0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BA64E51F1FC90BA700F9A0F0 /* Podfile */; };
 		BA64E5221FC90EC400F9A0F0 /* EncryptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E5211FC90EC400F9A0F0 /* EncryptionManager.swift */; };
-		BA64E5271FC9196E00F9A0F0 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E5261FC9196E00F9A0F0 /* DataModel.swift */; };
-		BA64E52B1FC919F600F9A0F0 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E52A1FC919F600F9A0F0 /* Folder.swift */; };
 		BA64E52D1FC91C2B00F9A0F0 /* PersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E52C1FC91C2B00F9A0F0 /* PersistentManager.swift */; };
-		BA64E52F1FC91C6C00F9A0F0 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64E52E1FC91C6C00F9A0F0 /* Credential.swift */; };
 		BA9187931FCAA332008A5254 /* AssetPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9187921FCAA332008A5254 /* AssetPicker.swift */; };
 		BAA544EC1FC9242D007351FA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA544EB1FC9242D007351FA /* CloudKit.framework */; };
 		BAA544EE1FC93AEB007351FA /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA544ED1FC93AEB007351FA /* AuthManager.swift */; };
+		BAB0F6AB1FCB7AC400119662 /* SecurityKeeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAB0F6A91FCB7AC400119662 /* SecurityKeeper.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,13 +39,11 @@
 		BA64E51F1FC90BA700F9A0F0 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BA64E5211FC90EC400F9A0F0 /* EncryptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionManager.swift; sourceTree = "<group>"; };
 		BA64E5231FC9174500F9A0F0 /* SecurityKeeper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SecurityKeeper.entitlements; sourceTree = "<group>"; };
-		BA64E5261FC9196E00F9A0F0 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		BA64E52A1FC919F600F9A0F0 /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 		BA64E52C1FC91C2B00F9A0F0 /* PersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentManager.swift; sourceTree = "<group>"; };
-		BA64E52E1FC91C6C00F9A0F0 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		BA9187921FCAA332008A5254 /* AssetPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPicker.swift; sourceTree = "<group>"; };
 		BAA544EB1FC9242D007351FA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		BAA544ED1FC93AEB007351FA /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		BAB0F6AA1FCB7AC400119662 /* SecurityKeeper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SecurityKeeper.xcdatamodel; sourceTree = "<group>"; };
 		DB002AF180FC5A055FEDAD29 /* Pods-SecurityKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecurityKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SecurityKeeper/Pods-SecurityKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +81,7 @@
 		BA64E4F51FC8FCA100F9A0F0 = {
 			isa = PBXGroup;
 			children = (
+				BAB0F6A91FCB7AC400119662 /* SecurityKeeper.xcdatamodeld */,
 				BA64E51F1FC90BA700F9A0F0 /* Podfile */,
 				BA64E5001FC8FCA100F9A0F0 /* SecurityKeeper */,
 				BA64E4FF1FC8FCA100F9A0F0 /* Products */,
@@ -146,10 +143,7 @@
 			children = (
 				BA64E5191FC9056000F9A0F0 /* UIHelper.swift */,
 				BA64E5211FC90EC400F9A0F0 /* EncryptionManager.swift */,
-				BA64E5261FC9196E00F9A0F0 /* DataModel.swift */,
-				BA64E52A1FC919F600F9A0F0 /* Folder.swift */,
 				BA64E52C1FC91C2B00F9A0F0 /* PersistentManager.swift */,
-				BA64E52E1FC91C6C00F9A0F0 /* Credential.swift */,
 				BAA544ED1FC93AEB007351FA /* AuthManager.swift */,
 				BA9187921FCAA332008A5254 /* AssetPicker.swift */,
 			);
@@ -263,15 +257,11 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SecurityKeeper/Pods-SecurityKeeper-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/TLPhotoPicker/TLPhotoPicker.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TLPhotoPicker.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,10 +300,8 @@
 				BA64E5021FC8FCA100F9A0F0 /* AppDelegate.swift in Sources */,
 				BA64E51A1FC9056000F9A0F0 /* UIHelper.swift in Sources */,
 				BA64E52D1FC91C2B00F9A0F0 /* PersistentManager.swift in Sources */,
-				BA64E5271FC9196E00F9A0F0 /* DataModel.swift in Sources */,
-				BA64E52F1FC91C6C00F9A0F0 /* Credential.swift in Sources */,
 				BA9187931FCAA332008A5254 /* AssetPicker.swift in Sources */,
-				BA64E52B1FC919F600F9A0F0 /* Folder.swift in Sources */,
+				BAB0F6AB1FCB7AC400119662 /* SecurityKeeper.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +492,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BAB0F6A91FCB7AC400119662 /* SecurityKeeper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BAB0F6AA1FCB7AC400119662 /* SecurityKeeper.xcdatamodel */,
+			);
+			currentVersion = BAB0F6AA1FCB7AC400119662 /* SecurityKeeper.xcdatamodel */;
+			path = SecurityKeeper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BA64E4F61FC8FCA100F9A0F0 /* Project object */;
 }

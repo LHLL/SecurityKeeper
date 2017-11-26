@@ -7,55 +7,99 @@
 //
 
 import Foundation
-import RealmSwift
+import CoreData
 
 class PersistentManager {
+    
     static var shared = PersistentManager()
-    
-    private var db:Realm
+    private var assets:[NSManagedObject] = []
     private var dbQueue = DispatchQueue(label: "DataBaseQueue")
+    private lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "SecurityKeeper")
+        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
     
-    private init() {
-        db = try! Realm()
-        let credential = db.objects(Credential.self)
+    private init() {}
+    
+    func selfCheck(){
+        let credential = load(entity:"Credential")
         if credential.count == 0 {
             saveCredential()
         }else{
             if let first = credential.first {
-                EncryptionManager.pass = first.password
-                EncryptionManager.iv = first.iv
+                EncryptionManager.pass = first.value(forKey: "password") as! String
+                EncryptionManager.iv = first.value(forKey: "iv") as! String
+            }
+            self.assets = load(entity:"Asset")
+        }
+    }
+    
+    func save(fileName:String,data:Data) {
+        let managedContext = persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Asset",
+                                                in: managedContext)!
+        let cre = NSManagedObject(entity: entity,
+                                  insertInto: managedContext)
+        
+        cre.setValue(fileName, forKeyPath: "title")
+        cre.setValue(data, forKeyPath: "data")
+        do {
+            try managedContext.save()
+            self.assets.append(cre)
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    func load(entity:String)->[NSManagedObject]{
+        let managedContext = persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: entity)
+        do {
+            return try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+        return []
+    }
+    
+    private func saveContext () {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
     }
     
-    func save(asset:DataModel){
-        dbQueue.sync {
-            try! db.write {
-                db.add(asset)
-            }
-        }
-    }
-    
-    func load(){
-        dbQueue.sync {
-            let credential = db.objects(DataModel.self)
-            for item in credential {
-                print(item.title)
-            }
-        }
-    }
-    
+}
+
+//Mark:Methods will be invoked only once
+extension PersistentManager {
     private func saveCredential(){
         let result = generateCredential()
         EncryptionManager.pass = result.0
         EncryptionManager.iv = result.1
-        let credential = Credential()
-        credential.password = result.0
-        credential.iv = result.1
-        dbQueue.sync {
-            try! db.write {
-                db.add(credential)
-            }
+        
+        let managedContext = persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Credential",
+                                                in: managedContext)!
+        let cre = NSManagedObject(entity: entity,
+                                  insertInto: managedContext)
+        
+        cre.setValue(result.0, forKeyPath: "password")
+        cre.setValue(result.1, forKeyPath: "iv")
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
         }
     }
     

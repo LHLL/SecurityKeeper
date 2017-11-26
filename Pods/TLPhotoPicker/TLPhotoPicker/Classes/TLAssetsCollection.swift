@@ -94,9 +94,7 @@ public struct TLPHAsset {
             }
             do {
                 let data = try Data(contentsOf: path, options: .mappedIfSafe)
-                DispatchQueue.main.async {
-                    completion(data)
-                }
+                completion(data)
             }catch let err{
                 print(err)
             }
