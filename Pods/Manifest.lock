@@ -5,16 +5,19 @@ PODS:
   - Realm/Headers (3.0.2)
   - RealmSwift (3.0.2):
     - Realm (= 3.0.2)
+  - TLPhotoPicker (1.3.7)
 
 DEPENDENCIES:
   - CryptoSwift
   - RealmSwift
+  - TLPhotoPicker
 
 SPEC CHECKSUMS:
   CryptoSwift: f81907430ebbe38b8404b4f6fb40f3c576a8755f
   Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
   RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
+  TLPhotoPicker: 5df5d11548fdaeaf43816668a06dbc920d967d35
 
-PODFILE CHECKSUM: 500ead5f6ced8a1ae99bd80a02ed279967865195
+PODFILE CHECKSUM: 6978ffbf619974732b46a03008a31bbcbfa50c3a
 
 COCOAPODS: 1.3.1

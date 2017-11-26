@@ -11,5 +11,5 @@ import RealmSwift
 
 class DataModel: Object {
     @objc dynamic var title = ""
-    @objc dynamic var data: Data?
+    @objc dynamic var path = ""
 }

@@ -28,6 +28,23 @@ class PersistentManager {
         }
     }
     
+    func save(asset:DataModel){
+        dbQueue.sync {
+            try! db.write {
+                db.add(asset)
+            }
+        }
+    }
+    
+    func load(){
+        dbQueue.sync {
+            let credential = db.objects(DataModel.self)
+            for item in credential {
+                print(item.title)
+            }
+        }
+    }
+    
     private func saveCredential(){
         let result = generateCredential()
         EncryptionManager.pass = result.0

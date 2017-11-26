@@ -21,11 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let _ = PersistentManager.shared
-        let str = "Hello World".data(using: .utf8)!
-        let data = EncryptionManager.encrypt(str)
-        let out = EncryptionManager.decrypt(data!)
-        print(String(data: out!, encoding: .utf8))
+        PersistentManager.shared.load()
         return true
     }
 

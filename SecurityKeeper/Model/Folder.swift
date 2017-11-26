@@ -10,6 +10,6 @@ import Foundation
 import RealmSwift
 
 class Folder: Object {
-    @objc dynamic var name = ""
+    @objc dynamic var name = "default"
     var contents:AnyRealmCollection<DataModel>?
 }

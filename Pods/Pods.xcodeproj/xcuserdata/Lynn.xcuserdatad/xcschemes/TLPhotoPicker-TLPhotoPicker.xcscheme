@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '944F9E8058166F0338B2E0CED8360924'
-               BlueprintName = 'Realm'
+               BlueprintIdentifier = '9574BBBB87D9D9DA8DCF26D0D1D93A92'
+               BlueprintName = 'TLPhotoPicker-TLPhotoPicker'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Realm.framework'>
+               BuildableName = 'TLPhotoPicker.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
